@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📏 Universal Unit Converter</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>📏 Universal Unit Converter</h1>
+
+    <div class="row">
+      <label for="category">Category</label>
+      <select id="category" onchange="populateUnits()"></select>
+    </div>
+
+    <div class="row">
+      <label for="input">From:</label>
+      <input type="number" id="input" oninput="convertUnits()" />
+      <select id="fromUnit" onchange="convertUnits()"></select>
+    </div>
+
+    <div class="row">
+      <label for="output">To:</label>
+      <input type="text" id="output" readonly />
+      <select id="toUnit" onchange="convertUnits()"></select>
+    </div>
+
+    <div class="row action-buttons">
+      <button onclick="swapUnits()">🔁 Swap</button>
+      <button onclick="copyResult()">📋 Copy</button>
+    </div>
+
+    <div id="summary" class="summary-text"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
