@@ -47,6 +47,59 @@ const units = {
     minute: 1 / 60,
     hour: 1 / 3600,
     day: 1 / 86400
+  },
+
+  // ✅ NEW CATEGORIES
+  Energy: {
+    joule: 1,
+    kilojoule: 0.001,
+    calorie: 0.239006,
+    kilocalorie: 0.000239006,
+    watthour: 0.000277778,
+    kilowatthour: 0.000000277778
+  },
+
+  Power: {
+    watt: 1,
+    kilowatt: 0.001,
+    horsepower: 0.00134102
+  },
+
+  Pressure: {
+    pascal: 1,
+    bar: 0.00001,
+    atm: 0.00000986923,
+    psi: 0.000145038,
+    torr: 0.00750062
+  },
+
+  Data: {
+    bit: 1,
+    byte: 1 / 8,
+    kilobyte: 1 / 8192,
+    megabyte: 1 / 8388608,
+    gigabyte: 1 / 8589934592,
+    terabyte: 1 / 8796093022208
+  },
+
+  Frequency: {
+    hertz: 1,
+    kilohertz: 0.001,
+    megahertz: 0.000001,
+    gigahertz: 0.000000001
+  },
+
+  Angle: {
+    degree: 1,
+    radian: 0.0174533,
+    gradian: 1.11111
+  },
+
+  FuelEconomy: {
+    "km/L": 1,
+    "L/100km": 100,
+    "mpg(US)": 2.35215,
+    "mpg(UK)": 2.82481
   }
 };
 
